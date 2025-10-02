@@ -192,14 +192,54 @@
 
 
 
-// Función para calcular el precio final con descuento
-function calcularPrecioFinal(precio, descuento) {
-    return precio - (precio * descuento / 100);
-}
+// // Función para calcular el precio final con descuento
+// function calcularPrecioFinal(precio, descuento) {
+//     return precio - (precio * descuento / 100);
+// }
 
-// Reutilizando la función en diferentes contextos
-let precioCamisa = calcularPrecioFinal(50, 10);
-let precioPantalon = calcularPrecioFinal(80, 15);
+// // Reutilizando la función en diferentes contextos
+// let precioCamisa = calcularPrecioFinal(100, 10);
+// let precioPantalon = calcularPrecioFinal(500, 15);
 
-console.log(`Precio final de la camisa: ${precioCamisa}`);
-console.log(`Precio final del pantalón: ${precioPantalon}`);
+// console.log(`Precio final de la camisa: ${precioCamisa}`);
+// console.log(`Precio final del pantalón: ${precioPantalon}`);
+
+// // Función para calcular el descuento
+// function calcularDescuento(precio, porcentajeDescuento) {
+//     return precio - (precio * porcentajeDescuento / 100);
+// }
+
+// // Función para calcular el precio final incluyendo impuestos
+// function calcularPrecioFinal(precio, descuento, impuesto) {
+//     let precioConDescuento = calcularDescuento(precio, descuento);
+//     return precioConDescuento + (precioConDescuento * impuesto / 100);
+// }
+
+// // Invocación
+// let total = calcularPrecioFinal(100, 10, 21);
+// console.log(total); // Muestra: 98.9
+
+
+// function calcularMulta(diasRetraso) {
+//     const multaPorDia = 5; // 50 centavos por día de retraso
+//     return diasRetraso * multaPorDia;
+// }
+
+// let multa = calcularMulta(10);
+// console.log(`La multa total es: $${multa} dólares`); // Muestra: La multa total es: $50
+
+
+// function devolverLibro(titulo, diasRetraso = 0) {
+//     const multa = diasRetraso * 1;
+//     const mensaje = diasRetraso > 0 
+//         ? `Devuelto con ${diasRetraso} días de retraso. Multa: $${multa} dólares` 
+//         : "Devuelto a tiempo. No hay multa.";
+//     console.log(`Libro "${titulo}": ${mensaje}`);
+// }
+
+// devolverLibro("El Principito");
+// // Muestra: Libro "El Principito": Devuelto a tiempo. No hay multa.
+
+// devolverLibro("El Principito", 10);
+// // Muestra: Libro "El Principito": Devuelto con 3 días de retraso. Multa: $1.5.
+
