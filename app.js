@@ -243,3 +243,72 @@
 // devolverLibro("El Principito", 10);
 // // Muestra: Libro "El Principito": Devuelto con 3 días de retraso. Multa: $1.5.
 
+
+
+//cambiar descuento en una pagina con un boton de pocentaje
+// const mensaje = document.getElementById('mensaje');
+// const boton = document.getElementById('cambiarDescuento');
+
+// let descuentoInicial;
+// //una cierta logica que pueda modificar el descuento inicial
+
+// const descuentoPredeterminado = 10;
+// let descuentoActual = descuentoInicial || descuentoPredeterminado
+// mensaje.textContent = `El descuento es del ${descuentoActual}%`
+
+// boton.addEventListener('click', () => {
+//     let descuentoIngresado = prompt("Ingrese el descuento en porcentaje..")
+
+//     descuentoIngresado = Number(descuentoIngresado)
+
+//     descuentoActual = descuentoIngresado || descuentoPredeterminado
+
+//     mensaje.textContent = `El descuento es del ${descuentoActual}%`
+// }
+
+// )
+
+// //funcion tradicional
+// function sumar(a, b) {
+//     return a + b;
+// }
+
+// console.log(sumar(10, 5));
+
+//Funcion flecha
+
+// const sumarFlecha = a => a + 10
+
+// console.log(sumarFlecha(20))
+
+// const sumarFlecha = a => a * 5
+
+// console.log(sumarFlecha(5))
+
+// const multiplicarValores = (a,b,c) => a * b * c + 10 + 50
+
+// console.log(multiplicarValores(10,2,5))
+
+//array simple
+
+// let numeros = [5, 7 ,9, 12];
+
+// console.group(numeros[2]);
+
+// let palabras = ["auto", "manzana", "pera", "programación"];
+
+// console.log(palabras[0])
+
+// let booleanos = [true, false, true, false];
+
+// console.log(booleanos);
+
+// //arrays dentro de arrays (para generar matrices)
+
+// let matriz = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ]
+
+// console.log(matriz[0][1]);
