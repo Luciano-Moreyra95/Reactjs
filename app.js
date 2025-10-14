@@ -312,3 +312,16 @@
 // ]
 
 // console.log(matriz[0][1]);
+
+//metodos
+
+let numeros = [40, 1, 58, 54, 5, 22];
+
+numeros.sort((a,b)=> a - b); //creciente
+//numeros.sort((a,b)=> b - a); //decreciente
+console.log (numeros)
+
+let palabras = ["auto", "zorro", "programación", "Banana"]
+
+palabras.sort((a,b)=> a.localeCompare(b));
+console.log(palabras)
