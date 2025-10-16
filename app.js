@@ -315,13 +315,55 @@
 
 //metodos
 
-let numeros = [40, 1, 58, 54, 5, 22];
+// let numeros = [40, 1, 58, 54, 5, 22];
 
-numeros.sort((a,b)=> a - b); //creciente
-//numeros.sort((a,b)=> b - a); //decreciente
-console.log (numeros)
+// numeros.sort((a,b)=> a - b); //creciente
+// //numeros.sort((a,b)=> b - a); //decreciente
+// console.log (numeros)
 
-let palabras = ["auto", "zorro", "programación", "Banana"]
+// let palabras = ["auto", "zorro", "programación", "Banana"]
 
-palabras.sort((a,b)=> a.localeCompare(b));
-console.log(palabras)
+// palabras.sort((a,b)=> a.localeCompare(b)); // de esta manera no funciona el sistema unicode y me ordena bien las palabras esten o no con mayusculas
+// console.log(palabras)
+
+// //reverse
+
+// numeros.reverse();
+
+// console.log(numeros)
+
+// let arrayObjetos = [];
+
+// arrayObjetos.push({
+//     id:1 , nombre: "producto 1"
+// })
+
+// arrayObjetos.push({
+//     id:2 , nombre: "producto 2"
+// })
+// arrayObjetos.push({
+//     id:3 , nombre: "producto 3"
+// })
+
+// console.log(arrayObjetos);
+
+// for(let objeto of arrayObjetos){
+//     console.log(objeto.nombre)
+// }
+
+// let autosPrimeros = [];
+
+// autosPrimeros.push({
+//     id:1, producto:"Ford Focus"
+// })
+
+// autosPrimeros.push({
+//     id:2, producto:"Peugeot 206"
+// })
+
+// autosPrimeros.push({
+//     id:3, producto:"Renault Clío"
+// })
+
+// console.log(autosPrimeros);
+
