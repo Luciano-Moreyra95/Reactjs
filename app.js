@@ -367,3 +367,38 @@
 
 // console.log(autosPrimeros);
 
+let bandera = true
+let total = 0
+
+let listaDeProductos = "1. Coca Cola: 3$ \n 2. Agua: 1$"
+
+while(bandera) {
+    let opciones = Number(prompt("1. ver productos \n 2. comprar \n 3. ver total"))
+    switch (opciones){
+        case 1:
+            alert(listaDeProductos)
+            break
+        case 2:
+            let producto = Number(prompt("Ingrese el numero del producto"))
+
+            if(producto == 1){
+                total += 3
+            } else if(producto == 2){
+                total += 1
+            } else{alert("no tenemos ese producto")}
+            break
+        case 3:
+            if(total == 0){
+                alert("no tenes nada en el carrito")
+            } else {
+                alert('Tu total es de: ' + total)
+            }
+            break
+        default:
+            alert("esta no es una opcion valida")
+            break
+    }
+
+    bandera = confirm("¿Quiere seguir comprando?")
+}
+
