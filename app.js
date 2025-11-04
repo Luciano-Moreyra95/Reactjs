@@ -367,38 +367,116 @@
 
 // console.log(autosPrimeros);
 
-let bandera = true
-let total = 0
+// let bandera = true
+// let total = 0
 
-let listaDeProductos = "1. Coca Cola: 3$ \n 2. Agua: 1$"
+// let listaDeProductos = "1. Coca Cola: 3$ \n 2. Agua: 1$"
 
-while(bandera) {
-    let opciones = Number(prompt("1. ver productos \n 2. comprar \n 3. ver total"))
-    switch (opciones){
-        case 1:
-            alert(listaDeProductos)
-            break
-        case 2:
-            let producto = Number(prompt("Ingrese el numero del producto"))
+// while(bandera) {
+//     let opciones = Number(prompt("1. ver productos \n 2. comprar \n 3. ver total"))
+//     switch (opciones){
+//         case 1:
+//             alert(listaDeProductos)
+//             break
+//         case 2:
+//             let producto = Number(prompt("Ingrese el numero del producto"))
 
-            if(producto == 1){
-                total += 3
-            } else if(producto == 2){
-                total += 1
-            } else{alert("no tenemos ese producto")}
-            break
-        case 3:
-            if(total == 0){
-                alert("no tenes nada en el carrito")
-            } else {
-                alert('Tu total es de: ' + total)
-            }
-            break
-        default:
-            alert("esta no es una opcion valida")
-            break
+//             if(producto == 1){
+//                 total += 3
+//             } else if(producto == 2){
+//                 total += 1
+//             } else{alert("no tenemos ese producto")}
+//             break
+//         case 3:
+//             if(total == 0){
+//                 alert("no tenes nada en el carrito")
+//             } else {
+//                 alert('Tu total es de: ' + total)
+//             }
+//             break
+//         default:
+//             alert("esta no es una opcion valida")
+//             break
+//     }
+
+//     bandera = confirm("¿Quiere seguir comprando?")
+// }
+
+
+// funciones
+
+// la principal diferencia entre las distintas funciones, es que las tradicionales tienen alcane en cualquier lado del codigo, no importa si esta arriba o abajo de la declaracion de la funcion, siempre se la puede llamar sin problemas
+
+const USER = "admin";
+const PASS = "12345";
+
+// login("arcortoon", "123pass");
+// login("frede", "5555dns");
+
+function login(usuario, contraseña) {
+    if(usuario === USER && contraseña === PASS){
+        return true
+    } else {
+        return false   // no esw obligatorio que las funciones retornen
     }
-
-    bandera = confirm("¿Quiere seguir comprando?")
 }
 
+// let intento = login ("admin", "12345")
+
+// console.log(intento);
+
+function inicioSesionFor(){
+    let intento = false
+    for (let i = 0; i < 3; i++) {
+        let usuario = prompt ("dame tu usuario");
+        let contraseña = prompt ("dame tu contraseña")
+        
+        intento = login(usuario, contraseña)
+
+        if(intento){
+            break
+        }
+    }
+    if (!intento) {
+        alert("No pudiste entrar, ahí va la policía!!")
+    }
+    return intento
+
+}
+
+
+function mostrarproducto(){
+    let producto = "Nuestros productos son: 1- Agua\ 2- Te \ 3- Mate \ 4- Café"
+    alert(producto)
+}
+
+
+function menu(){
+    let bandera = true
+
+    while(bandera){
+        let opciones = Number(prompt("Welcome to Tienda! Usted puede hacer lo siguiente: \n 1 - Ver productos \n 2 - comprar con ID \n 3 - Terminar compra"))
+
+        switch(opciones){
+            case 1:
+                mostrarproducto()
+                break
+            case 2:
+                break
+            case 3:
+                break
+            default:
+                break
+        }
+
+        bandera = confirm("Desea seguir comprando?")
+    }
+
+
+}
+
+
+
+if (inicioSesionFor()){
+    menu()
+}
