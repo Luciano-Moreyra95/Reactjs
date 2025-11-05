@@ -407,76 +407,97 @@
 
 // la principal diferencia entre las distintas funciones, es que las tradicionales tienen alcane en cualquier lado del codigo, no importa si esta arriba o abajo de la declaracion de la funcion, siempre se la puede llamar sin problemas
 
-const USER = "admin";
-const PASS = "12345";
+// const USER = "admin";
+// const PASS = "12345";
 
-// login("arcortoon", "123pass");
-// login("frede", "5555dns");
+// // login("arcortoon", "123pass");
+// // login("frede", "5555dns");
 
-function login(usuario, contraseña) {
-    if(usuario === USER && contraseña === PASS){
-        return true
-    } else {
-        return false   // no esw obligatorio que las funciones retornen
-    }
-}
+// function login(usuario, contraseña) {
+//     if(usuario === USER && contraseña === PASS){
+//         return true
+//     } else {
+//         return false   // no esw obligatorio que las funciones retornen
+//     }
+// }
 
-// let intento = login ("admin", "12345")
+// // let intento = login ("admin", "12345")
 
-// console.log(intento);
+// // console.log(intento);
 
-function inicioSesionFor(){
-    let intento = false
-    for (let i = 0; i < 3; i++) {
-        let usuario = prompt ("dame tu usuario");
-        let contraseña = prompt ("dame tu contraseña")
+// function inicioSesionFor(){
+//     let intento = false
+//     for (let i = 0; i < 3; i++) {
+//         let usuario = prompt ("dame tu usuario");
+//         let contraseña = prompt ("dame tu contraseña")
         
-        intento = login(usuario, contraseña)
+//         intento = login(usuario, contraseña)
 
-        if(intento){
-            break
-        }
-    }
-    if (!intento) {
-        alert("No pudiste entrar, ahí va la policía!!")
-    }
-    return intento
+//         if(intento){
+//             break
+//         }
+//     }
+//     if (!intento) {
+//         alert("No pudiste entrar, ahí va la policía!!")
+//     }
+//     return intento
 
-}
-
-
-function mostrarproducto(){
-    let producto = "Nuestros productos son: 1- Agua\ 2- Te \ 3- Mate \ 4- Café"
-    alert(producto)
-}
+// }
 
 
-function menu(){
-    let bandera = true
-
-    while(bandera){
-        let opciones = Number(prompt("Welcome to Tienda! Usted puede hacer lo siguiente: \n 1 - Ver productos \n 2 - comprar con ID \n 3 - Terminar compra"))
-
-        switch(opciones){
-            case 1:
-                mostrarproducto()
-                break
-            case 2:
-                break
-            case 3:
-                break
-            default:
-                break
-        }
-
-        bandera = confirm("Desea seguir comprando?")
-    }
+// function mostrarproducto(){
+//     let producto = "Nuestros productos son: 1- Agua\ 2- Te \ 3- Mate \ 4- Café"
+//     alert(producto)
+// }
 
 
-}
+// function menu(){
+//     let bandera = true
+
+//     while(bandera){
+//         let opciones = Number(prompt("Welcome to Tienda! Usted puede hacer lo siguiente: \n 1 - Ver productos \n 2 - comprar con ID \n 3 - Terminar compra"))
+
+//         switch(opciones){
+//             case 1:
+//                 mostrarproducto()
+//                 break
+//             case 2:
+//                 break
+//             case 3:
+//                 break
+//             default:
+//                 break
+//         }
+
+//         bandera = confirm("Desea seguir comprando?")
+//     }
+
+
+// }
 
 
 
-if (inicioSesionFor()){
-    menu()
-}
+// if (inicioSesionFor()){
+//     menu()
+// }
+
+
+// const saludar = (nombre) => {
+//     return "Hola, " + nombre + ", todo bien?. " + nombre + ", tenemos un trabajo para vos"
+// }
+
+
+// console.log(saludar("María"));
+
+// let nombre = "Juan"
+
+// let edad = 25
+
+// let producto = "Camiseta"
+
+// let precio = 25.99
+
+// console.log(`Hola ${nombre}, tienes ${edad} años`)
+
+// console.log(`Hola ${nombre}. Estás comprando una ${producto} y el precio es de ${precio}`)
+
