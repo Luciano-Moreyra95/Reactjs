@@ -501,3 +501,44 @@
 
 // console.log(`Hola ${nombre}. Estás comprando una ${producto} y el precio es de ${precio}`)
 
+// //clases
+// class User {
+
+// }
+
+// // funciones tradicionales
+// function authUser () {}
+
+// //Funciones flecha / Arrow functions
+
+// const auth = () => {
+
+// }
+
+
+// //null
+// let user = null
+
+// //ID
+// let id = "1"
+
+// let isAdmin = false
+
+// // objetos individuales
+// const student = { name: "", surname: ""}
+
+// //varios objetos
+// const students = [
+//     { name: "", surname: ""}
+//     { name: "", surname: ""}
+// ]  
+
+// //Parseos
+// // Math, Date, JSON, parseInt, isNaN
+
+// function sumar(num1, num2) {
+//     return num1 + num2;
+// }
+
+// const sumarArrow = (num1, num2) => num1 + num2;
+
